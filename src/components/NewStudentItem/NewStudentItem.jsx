@@ -78,6 +78,10 @@ const NewStudentItem = (props) => {
         <div className="SubmitButton">
           <button type="submit">Add Student</button>
         </div>
+        <div className="SubmitButton">
+          <button onClick={() => props.setIsShow(false)} type="button">Cancel</button>
+        </div>
+        
       </div>
     </form>
   );
