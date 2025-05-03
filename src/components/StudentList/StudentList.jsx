@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export function StudentList(props) {
   const studentList = props.studentList;
-  const [currentBtype, setCurrentBType] = useState("Aสส");
+  const [currentBtype, setCurrentBType] = useState("All");
   const filteredStudentList = currentBtype === "All"
     ? studentList
     : studentList.filter(e => e.bType === currentBtype);
